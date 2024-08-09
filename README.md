@@ -4,4 +4,16 @@ Note: This does not modify the individual settings of each power mode; it only s
 
 
 
-Another note: I did not add an Icon as I am a beginner so I have no idea, you can add one on your own if you'd like to.
+https://www.virustotal.com/gui/file/951611cc1586d9282de03a4b7e84d4a6bdc629568dad2934f2c73893435d0a48/detection 
+
+The reason behind a shellcode runner detection is because well it is a shellcode runner, I used the ShellExecute function to execute some commands via the cmd.exe, this puts the powercfg into use to change the power modes. 
+
+First example in the code:
+
+ShellExecute(NULL, L"open", L"cmd.exe", L"/C powercfg /setactive SCHEME_BALANCED", NULL, SW_HIDE);       
+
+Second example:
+
+ShellExecute(NULL, L"open", L"cmd.exe", L"/C powercfg /setactive SCHEME_MAX", NULL, SW_HIDE);
+
+These I believe are the only times ShellExecute is used, it's well known for security vendors to flag this as malware because it acts like it. 
