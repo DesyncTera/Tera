@@ -1,1 +1,4 @@
 A simple PowerSwitcher that switches the currect power mode from Balanced to Power Saver. Of course this can go back and fourth, this is just for people who don't really do anything such as gaming/modeling and have a high/mid end PC, it just saves time from going all the way into control panel and searching for the power mode each time. 
+
+
+Note: This does not play with the settings of each power mode, it simply changes the mode in between the two. To change the settings of each mode and how much resources your PC takes in while on that mode, you can simply change the settings via the control panel > HardWare And Sounds > Power Options > Change Plan Settings > Customize each to your liking. I personaly put the power saver on the lowest possible due to high electrical bills (this is mostly on when I'm watching a movie/YouTube). 
